@@ -1,5 +1,6 @@
 <!--
- Copyright (C) 2016  Marco Dumont
+ScheVaMe-Index Fiddle is software to be used to calculate the ScheVaME-Index of projects.
+Copyright (C) 2016  Marco Dumont
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -19,9 +20,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>ScheVaMe-Index Fiddle - Welcome</title>
+	 <link rel="stylesheet" type="text/css" href="style/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="style/12cols.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <!-- AngularJS -->	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+
+<!-- Firebase -->
+	<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+
+<!-- AngularFire -->	
+	<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+<!-- Controller -->
+   <script src="scripts/WelcomeController.js"></script>
+  
 </head>
-<body>
-<nav></nav>
+<body ng-controller="WelcomeController">
+<nav><div class="span_1_of_12">
+	<h1>
+     Welcome to ScheVaME-Index fiddle.
+  </h1>  
+  </div>
+  <div class="span_7_of_12">
+  </div>
+  <span id="logins">
+  <div class="span_1_of_12 cursor">
+	<img ng-onclick="doFacebookLogin()" href="images/facebook.gif" >
+  </div>
+  <div class="span_1_of_12 cursor">
+	<img ng-onclick="doGoogleLogin()" href="images/google.gif" >
+  </div>
+  <div class="span_1_of_12 cursor">
+	<img ng-onclick="doTwitterLogin()" href="images/twitter.gif" >
+  </div>
+  <div class="span_1_of_12 cursor">
+	<img ng-onclick="doGitHubLogin()" href="images/github.gif" >
+  </div>
+  </span>  
+</nav>
+  
+  
+  
 </body>
 </html>

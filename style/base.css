@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+
+.cursor {
+	cursor : pointer;
+}
+
+.align-right {
+	text-align: right;
+}
+
+h1 {
+	font-size: 16pt;
+}
+
+html {
+  font-family: 'Lato', sans-serif;
+}
