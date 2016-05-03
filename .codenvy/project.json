@@ -1,0 +1,1 @@
+{"mixinTypes":[],"builders":{"configs":{}},"runners":{"configs":{},"default":"system:/javascript/web/grunt"},"description":"A website to help in using ScheVaME-index","type":"AngularJS","attributes":{"framework":["AngularJS"],"language":["javascript"]}}
