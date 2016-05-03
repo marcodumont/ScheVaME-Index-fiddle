@@ -17,6 +17,9 @@
 
  * 
  */
+
+var app = angular.module("ScheVaMEApp", ["firebase"]);
+
 app.controller("WelcomeController", function($scope, $firebaseAuth) {
   $scope.ref = new Firebase("https://blazing-fire-882.firebaseio.com/");
   // create an instance of the authentication service
