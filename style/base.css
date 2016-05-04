@@ -9,9 +9,19 @@
 }
 
 h1 {
-	font-size: 16pt;
+	font-size: 32pt;
 }
 
 html {
   font-family: 'Lato', sans-serif;
+  margin: auto;
+  width: 960px;
+}
+
+.login {
+	width: 50px;
+}
+
+img {
+	padding: 10px;
 }

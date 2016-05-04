@@ -18,49 +18,49 @@ Copyright (C) 2016  Marco Dumont
 -->
 
 <!DOCTYPE html>
-<html>
+<html ng-app="ScheVaMEApp" ng-controller="WelcomeController">
 <head>
     <title>ScheVaMe-Index Fiddle - Welcome</title>
-	 <link rel="stylesheet" type="text/css" href="style/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="style/html5reset.css">
     <link rel="stylesheet" type="text/css" href="style/12cols.css">
+    <link rel="stylesheet" type="text/css" href="style/base.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-  <!-- AngularJS -->	
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 
-<!-- Firebase -->
-	<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
 
-<!-- AngularFire -->	
-	<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
-<!-- Controller -->
-   <script src="scripts/WelcomeController.js"></script>
-  
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+    <!-- Controller -->
+    <script src="scripts/WelcomeController.js"></script>
 </head>
-<body ng-controller="WelcomeController">
-<nav><div class="span_1_of_12">
-	<h1>
-     Welcome to ScheVaME-Index fiddle.
-  </h1>  
-  </div>
-  <div class="span_7_of_12">
-  </div>
-  <span id="logins">
-  <div class="span_1_of_12 cursor">
-	<img ng-onclick="doFacebookLogin()" href="images/facebook.gif" >
-  </div>
-  <div class="span_1_of_12 cursor">
-	<img ng-onclick="doGoogleLogin()" href="images/google.gif" >
-  </div>
-  <div class="span_1_of_12 cursor">
-	<img ng-onclick="doTwitterLogin()" href="images/twitter.gif" >
-  </div>
-  <div class="span_1_of_12 cursor">
-	<img ng-onclick="doGitHubLogin()" href="images/github.gif" >
-  </div>
-  </span>  
-</nav>
-  
-  
-  
-</body>
+<header>
+    <nav>
+        <table class="span_12_of_12">
+            <tr>
+                <td class="span_8_of_12">
+                    <h1> Welcome {{user.name}} to ScheVaME-Index fiddle.</h1>
+                </td>
+                <td class="span_1_of_12">
+                    <img class="login" ng-click="doFacebookLogin()" src="images/facebook.gif" title="Click to login">
+                </td>
+                <td class="span_1_of_12">
+                    <img class="login" ng-click="doGoogleLogin()" src="images/google.gif" title="Click to login">
+                </td>
+                <td class="span_1_of_12">
+                    <img class="login" ng-click="doTwitterLogin()" src="images/twitter.gif" title="Click to login">
+                </td>
+                <td class="span_1_of_12">
+                    <img class="login" ng-click="doGitHubLogin()" src="images/github.gif" title="Click to login">
+                </td>
+            </tr>
+        </table>
+        <hr class="span_12_of_12">
+    </nav>
+</header>
+<section>
+    
+</section>
 </html>
